@@ -5,15 +5,13 @@ import feign.form.FormProperty;
 import java.util.List;
 
 public record WhatsappResponse(
-        @FormProperty("messaging_product")
-        String messagingProduct,
+        String messaging_product,
         List<ContactsRecord> contacts,
         List<MessagesRecord> messages
 ) {
     public record ContactsRecord(
             String input,
-            @FormProperty("wa_id")
-            String waId
+            String wa_id
     ) {}
 
     public record MessagesRecord(

@@ -1,7 +1,7 @@
 package dev.veiga.morning_phrases.controller;
 
 import dev.veiga.morning_phrases.dto.MorningPhraseUserDto;
-import dev.veiga.morning_phrases.repository.MorningPhraseUser;
+import dev.veiga.morning_phrases.repository.entities.MorningPhraseUser;
 import dev.veiga.morning_phrases.services.MorningPhraseUserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

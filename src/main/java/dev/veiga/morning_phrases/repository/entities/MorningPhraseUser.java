@@ -1,4 +1,4 @@
-package dev.veiga.morning_phrases.repository;
+package dev.veiga.morning_phrases.repository.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,4 +24,6 @@ public class MorningPhraseUser {
     private String phone;
 
     private List<String> preferences;
+
+    private boolean active;
 }

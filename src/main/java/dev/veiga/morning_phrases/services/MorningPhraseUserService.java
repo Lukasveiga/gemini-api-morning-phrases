@@ -1,7 +1,7 @@
 package dev.veiga.morning_phrases.services;
 
 import dev.veiga.morning_phrases.dto.MorningPhraseUserDto;
-import dev.veiga.morning_phrases.repository.MorningPhraseUser;
+import dev.veiga.morning_phrases.repository.entities.MorningPhraseUser;
 import dev.veiga.morning_phrases.repository.MorningPhraseUserRepository;
 import org.springframework.stereotype.Service;
 
@@ -22,12 +22,17 @@ public class MorningPhraseUserService {
                         null,
                         input.target(),
                         input.phone(),
-                        input.preferences()
+                        input.preferences(),
+                        true
                 )
         );
     }
 
     public List<MorningPhraseUser> listAll() {
         return this.morningPhraseUserRepository.findAll();
+    }
+
+    public List<MorningPhraseUser> listAllActive() {
+        return this.morningPhraseUserRepository.listAllActive();
     }
 }

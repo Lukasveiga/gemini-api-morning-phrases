@@ -3,19 +3,15 @@ package dev.veiga.morning_phrases.dto.whatsapp;
 import feign.form.FormProperty;
 
 public record WhatsappRequest(
-        @FormProperty("messaging_product")
-        String messagingProduct,
-
-        @FormProperty("recipient_type")
-        String recipientType,
+        String messaging_product,
+        String recipient_type,
         String to,
         String type,
         Text text
 ) {
 
     public record Text(
-            @FormProperty("preview_url")
-            boolean previewUrl,
+            boolean preview_url,
             String body
     ) {}
 }

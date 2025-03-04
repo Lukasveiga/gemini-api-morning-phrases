@@ -5,7 +5,7 @@ import dev.veiga.morning_phrases.services.GeminiService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/morning-phrase")
+@RequestMapping("/morning-phrase-gemini")
 public class GeminiController {
 
     private final GeminiService geminiService;
