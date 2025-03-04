@@ -1,7 +1,6 @@
-package dev.veiga.morning_phrases.dto;
+package dev.veiga.morning_phrases.dto.gemini;
 
 import java.util.List;
-import java.util.Map;
 
 public record GeminiRequest(
         List<Content> contents

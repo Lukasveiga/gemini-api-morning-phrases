@@ -1,7 +1,7 @@
 package dev.veiga.morning_phrases.config;
 
-import dev.veiga.morning_phrases.dto.GeminiRequest;
-import dev.veiga.morning_phrases.dto.GeminiResponse;
+import dev.veiga.morning_phrases.dto.gemini.GeminiRequest;
+import dev.veiga.morning_phrases.dto.gemini.GeminiResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;

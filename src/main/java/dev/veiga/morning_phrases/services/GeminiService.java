@@ -1,7 +1,7 @@
 package dev.veiga.morning_phrases.services;
 
 import dev.veiga.morning_phrases.config.GeminiApiClient;
-import dev.veiga.morning_phrases.dto.GeminiRequest;
+import dev.veiga.morning_phrases.dto.gemini.GeminiRequest;
 import dev.veiga.morning_phrases.dto.MorningPhraseRequestContext;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

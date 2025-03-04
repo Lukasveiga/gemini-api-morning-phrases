@@ -1,4 +1,4 @@
-package dev.veiga.morning_phrases.dto;
+package dev.veiga.morning_phrases.dto.gemini;
 
 import java.util.List;
 
