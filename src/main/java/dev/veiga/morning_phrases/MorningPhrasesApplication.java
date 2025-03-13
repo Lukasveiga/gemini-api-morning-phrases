@@ -11,5 +11,4 @@ public class MorningPhrasesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MorningPhrasesApplication.class, args);
 	}
-
 }
